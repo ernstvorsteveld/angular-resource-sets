@@ -1,0 +1,13 @@
+<div class="card-container">
+    <a *ngFor="let menuItem of menuItems" class="card" rel="noopener" href={{menuItem.href}}>
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path [attr.d]="menuItem.icons.before" />
+        </svg>
+
+        <span>{{menuItem.menu}}</span>
+
+        <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path [attr.d]="menuItem.icons.after" />
+        </svg>
+    </a>
+</div>
